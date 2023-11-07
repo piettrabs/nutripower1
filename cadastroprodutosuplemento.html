@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutripower</title>
+ 
+    <!-- Inclua o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+ 
+<!-- Logotipo -->
+<div class="navbar justify-content-center mt-3 bg-danger">
+    <img src="logo.png" width="150px" height="150px" />
+  </div>
+ 
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index1.html">Nutripower</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cadastrousuario.html">Entrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cadastroProduto.html">Cadastro Produto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+<!-- Formulário de Cadastro de Pessoa com Bootstrap -->
+<div class="container mt-5">
+    <h1>Cadastrar Produto Suplementos Alimentares</h1>
+    <form action = "/cadastroprodutorelogio" method="post"> <!--rota para inserir os dados pelo site-->
+        <div class="form-group">
+            <label for="id">Id produto:</label>
+            <input type="text" class="form-control" id="id" name="id" placeholder="Id produto">
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição produto:</label>
+            <input type="descricao" class="form-control" id="descricao" name="descricao" placeholder="Descrição produto">
+        </div>
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca">
+        </div>
+        <div class="form-group">
+            <label for="datavalidade">Data de validade:</label>
+            <input type="text" class="form-control" id="datavalidade" name="datavalidade" placeholder="Data de validade">
+        </div>
+        <div class="form-group">
+            <label for="quantidadedeestoque">Quantidade de estoque:</label>
+            <input type="text" class="form-control" id="quantidadedeestoque" name="quantidadedeestoque" placeholder="Quantidade de estoque">
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <br>
+        <br>
+    </form>
+</div>
+
+    <!-- Rodapé -->
+  <footer class="text-white text-center py-3 bg-danger fixed-bottom">
+    <p>&copy; 2023 Piettra Sattolo.</p>
+  </footer>
+ 
+<!-- Inclua o JavaScript do Bootstrap e jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
